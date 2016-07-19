@@ -1,13 +1,5 @@
 
-/* ------------------------------------------------------------------ */
-/* a. General Styles
-/* ------------------------------------------------------------------ */
-
 body { background: #0f0f0f; }
-
-/* ------------------------------------------------------------------ */
-/* b. Header Styles
-/* ------------------------------------------------------------------ */
 
 header {
    position: relative;
@@ -22,8 +14,6 @@ header {
    text-align: center;
    overflow: hidden;
 }
-
-/* vertically center banner section */
 header:before {
    content: '';
    display: inline-block;
@@ -65,7 +55,6 @@ header .banner-text hr {
    border-color: rgba(150, 150, 150, .1);
 }
 
-/* header social links */
 header .social {
    margin: 24px 0;
    padding: 0;
@@ -79,8 +68,6 @@ header .social li {
 }
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
-
-/* scrolldown link */
 header .scrolldown a {
    position: absolute;
    bottom: 30px;
@@ -102,8 +89,6 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
-/* primary navigation
---------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
 	 padding: 0;
@@ -111,7 +96,6 @@ header .scrolldown a:hover { color: #11ABB0; }
 	 outline: none;
 }
 
-/* nav-wrap */
 #nav-wrap {
    font: 12px 'opensans-bold', sans-serif;
    width: 100%;
@@ -125,14 +109,11 @@ header .scrolldown a:hover { color: #11ABB0; }
 }
 .opaque { background-color: #333; }
 
-/* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
 
 ul#nav {
    min-height: 48px;
    width: auto;
-
-   /* center align the menu */
    text-align: center;
 }
 ul#nav li {
@@ -142,10 +123,13 @@ ul#nav li {
    display: inline-block;
 }
 
-/* Links */
+.address{
+  color: #fff;
+  font-family: helvetica;
+}
+
 ul#nav li a {
 
-/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
    display: inline-block;
    padding: 8px 13px;
@@ -160,15 +144,13 @@ ul#nav li a {
 	-ms-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
 }
-
+.top-nav-collapse {
+    padding: 0;
+    background: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
-
-
-/* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
-
 #about {
    background: #2B2B2B;
    padding-top: 96px;
@@ -216,11 +198,6 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
-
-/* ------------------------------------------------------------------ */
-/* d. Resume Section
-/* ------------------------------------------------------------------ */
-
 #resume {
    background: #fff;
    padding-top: 90px;
@@ -263,74 +240,6 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
-/* ------------------------------------------------------------------ */
-/* e. Portfolio Section
-/* ------------------------------------------------------------------ */
-
-
-	
-
-
-
-
-
-#call-to-action {
-   background: #212121;
-   padding-top: 66px;
-   padding-bottom: 48px;
-}
-#call-to-action h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-}
-#call-to-action h1 span { display: none; }
-#call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f0ac";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
-#call-to-action .action {
-   margin-top: 12px;
-}
-#call-to-action h2 {
-   font: 28px/36px 'opensans-bold', sans-serif;
-   color: #EBEEEE;
-   margin-bottom: 6px;
-}
-#call-to-action h2 a {
-   color: inherit;
-}
-#call-to-action p {
-   color: #636363;
-   font-size: 17px;
-}
-/*#
-call-to-action .button {
-	color:#fff;
-   background: #0D0D0D;
-}
-*/
-#call-to-action .button:hover,
-#call-to-action .button:active {
-   background: #FFFFFF;
-   color: #0D0D0D;
-}
-#call-to-action p span {
-	font-family: 'opensans-semibold', sans-serif; 
-	coloro#D8D8D8;
-}
-
-
-/* ------------------------------------------------------------------ */
-/* h. hobbies Section
-/* ------------------------------------------------------------------ */
 #hobbies h2{
 text-align: center;
 }
@@ -345,13 +254,9 @@ text-align: center;
   background-color: #757575;
 }
 
-/* ------------------------------------------------------------------ */
-/* h. Contact Section
-/* ------------------------------------------------------------------ */
-
 .contact{
    position: relative;
-   height: 800px;
+   height: 900px;
    min-height: 500px;
    width: 100%;
    background: #161415 url(../img/img1.jpg) no-repeat top center;
@@ -365,13 +270,6 @@ text-align: center;
 .contact h3,label{
   color: #fff;
 }
-.widget{
-  color: #fff;
-}
-/* ------------------------------------------------------------------ */
-/* i. Footer
-/* ------------------------------------------------------------------ */
-
 footer {
   background-color:grey ;
    padding-top: 48px;
@@ -399,8 +297,6 @@ footer .copyright li {
 }
 
 
-
-/* social links */
 footer .social-links {
    margin: 18px 0 30px 0;
    padding: 0;
@@ -416,7 +312,6 @@ footer .social-links li {
 
 footer .social-links li:first-child { margin-left: 0; }
 
-/* Go To Top Button */
 #go-top {
 	position: absolute;
 	top: -24px;
